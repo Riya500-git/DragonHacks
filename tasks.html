@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            * {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+  font-family:"Roboto",sans-serif;
+  background:#005eff;
+}
+.container {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.container h1 {
+  font-size:35px;
+  color:rgb(255, 255, 255);
+ text-align:center;
+}
+.container h2 {
+  font-size:25px;
+  color:rgb(255, 255, 255);
+  text-align:center;
+}
+.container .list {
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+  max-width:650px;
+}
+.form-element {
+  position:relative;
+  width:100px;
+  height:100px;
+}
+.form-element input {
+  display:none;
+}
+.form-element label {
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:100%;
+  cursor:pointer;
+  border:2px solid rgb(0, 0, 0);
+  background:#fff;
+  box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
+  text-align:center;
+  transition:all 200ms ease-in-out;
+  border-radius:5px;
+}
+.form-element .icon {
+  margin-top:10px;
+  font-size:30px;
+  color:#555;
+  transition:all 200ms ease-in-out;
+}
+.form-element .title {
+  font-size:15px;
+  color:#555;
+  padding:5px 0px;
+  transition:all 200ms ease-in-out;
+}
+.form-element label:before {
+  content:"✓";
+  position:absolute;
+  width:18px;
+  height:18px;
+  top:8px;
+  left:8px;
+  background:#0d0df1;
+  color:#fff;
+  text-align:center;
+  line-height:18px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:50%;
+  opacity:0;
+  transform:scale(0.5);
+  transition:all 200ms ease-in-out;
+}
+.form-element input:checked + label:before {
+  opacity:1;
+  transform:scale(1);
+}
+.form-element input:checked + label .icon {
+  color:#0d0df1;
+}
+.form-element input:checked + label .title {
+  color:#0d0df1;
+}
+.form-element input:checked + label {
+  border:2px solid #0d0df1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.content p{
+  padding-bottom: 10px;
+}
+
+
+.fixed-btn{
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  background: #0400ff;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px #2f4fa5;
+  cursor: pointer;
+}
+
+.fixed-btn p{
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fixed-btn:active{
+  box-shadow: 0  0;
+}
+
+.fixed-btn1{
+  position: fixed;
+  bottom: 10%;
+  left: 3%;
+  background: #0400ff;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px #2f4fa5;
+  cursor: pointer;
+}
+
+.fixed-btn1 p{
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fixed-btn1:active{
+  box-shadow: 0  0;
+}
+
+</style>
+
+        </head>
+        <body>
+            <section>
+
+            <div class="container">
+  <h1>Frank Smith, 89</h1></br>
+  <h2>Thursday, 5:30-6:30pm</h2></br></br></br></br>
+  <h2>Please tick when completed</h2>
+  <div class="list">
+    <div class="form-element">
+      <input type="checkbox" name="platform" value="instagram" id="instagram">
+      <label for="instagram">
+        <div class="icon">
+          <i class="fa fa-instagram"></i>
+        </div>
+        <div class="title">
+          Showering
+        </div>
+      </label>
+    </div>
+    <div class="form-element">
+      <input type="checkbox" name="platform" value="twitch" id="twitch">
+      <label for="twitch">
+        <div class="icon">
+          <i class="fa fa-twitch"></i>
+        </div>
+        <div class="title">
+          Toileting
+        </div>
+      </label>
+    </div>
+    <div class="form-element">
+      <input type="checkbox" name="platform" value="slack" id="slack">
+      <label for="slack">
+        <div class="icon">
+          <i class="fa fa-slack"></i>
+        </div>
+        <div class="title">
+          Groceries
+        </div>
+      </label>
+    </div>
+      </label>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+<div class="fixed-btn">
+    <p href=" " > Next</p>
+  </div>
+
+  <div class="fixed-btn1">
+    <p href=" " > Back</p>
+  </div>
+
+
+</body>
+</html>
