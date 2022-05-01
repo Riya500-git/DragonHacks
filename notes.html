@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  background: #005eff;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: #005eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.content p{
+  padding-bottom: 10px;
+}
+
+
+.fixed-btn{
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  background: #0400ff;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px #2f4fa5;
+  cursor: pointer;
+}
+
+.fixed-btn p{
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fixed-btn:active{
+  box-shadow: 0  0;
+}
+
+.fixed-btn1{
+  position: fixed;
+  bottom: 10%;
+  left: 3%;
+  background: #0400ff;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px #2f4fa5;
+  cursor: pointer;
+}
+
+.fixed-btn1 p{
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fixed-btn1:active{
+  box-shadow: 0  0;
+}
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+.container{
+  height: 350px;
+  width: 430px;
+  position: relative;
+}
+.container .wrapper{
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ffff;
+  border: 2px dashed #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 100px;
+  color: #9658fe;
+}
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg,#3700ff 0%,#001eff 100%);
+
+  </style>
+  </head>
+
+  <body>
+        <section>
+  <div class="container">
+  
+      <div class="form-group">
+        <label for="massage"><h1>Leave a Note</h1></label>
+        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+      </div>
+
+      
+  <div id="status"></div>
+</section>
+
+
+
+
+
+
+
+<div class="fixed-btn">
+    <p href=" " > Next</p>
+  </div>
+
+  <div class="fixed-btn1">
+    <p href=" " > Back</p>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+         <div class="wrapper">
+            <div class="image">
+               <img src="" alt="">
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <i class="fas fa-cloud-upload-alt"></i>
+               </div>
+               <div class="text">
+                  Share a photo
+               </div>
+            </div>
+            <div id="cancel-btn">
+               <i class="fas fa-times"></i>
+            </div>
+            <div class="file-name">
+               File name here
+            </div>
+         </div>
+         </br></br>
+         <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+         </br></br>
+         <input id="default-btn" type="file" hidden>
+      </div>
+      <script>
+         const wrapper = document.querySelector(".wrapper");
+         const fileName = document.querySelector(".file-name");
+         const defaultBtn = document.querySelector("#default-btn");
+         const customBtn = document.querySelector("#custom-btn");
+         const cancelBtn = document.querySelector("#cancel-btn i");
+         const img = document.querySelector("img");
+         let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+         function defaultBtnActive(){
+           defaultBtn.click();
+         }
+         defaultBtn.addEventListener("change", function(){
+           const file = this.files[0];
+           if(file){
+             const reader = new FileReader();
+             reader.onload = function(){
+               const result = reader.result;
+               img.src = result;
+               wrapper.classList.add("active");
+             }
+             cancelBtn.addEventListener("click", function(){
+               img.src = "";
+               wrapper.classList.remove("active");
+             })
+             reader.readAsDataURL(file);
+           }
+           if(this.value){
+             let valueStore = this.value.match(regExp);
+             fileName.textContent = valueStore;
+           }
+         });
+      </script>
+
+      </body>
+
+      </html>
